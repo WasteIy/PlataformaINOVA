@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://gn7aout14vn"]
+
+[ext_resource type="Texture2D" uid="uid://bouj2ycxuh7pa" path="res://sprites/cereja.png" id="1_owcst"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ih3r"]
+atlas = ExtResource("1_owcst")
+region = Rect2(0, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44bkg"]
+atlas = ExtResource("1_owcst")
+region = Rect2(21, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjdwm"]
+atlas = ExtResource("1_owcst")
+region = Rect2(42, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h787a"]
+atlas = ExtResource("1_owcst")
+region = Rect2(63, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgeua"]
+atlas = ExtResource("1_owcst")
+region = Rect2(84, 0, 21, 21)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ih3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44bkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjdwm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h787a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgeua")
+}],
+"loop": true,
+"name": &"cereja",
+"speed": 5.0
+}]

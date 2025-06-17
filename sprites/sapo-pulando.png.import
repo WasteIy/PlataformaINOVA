@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnco75vyn7qu0"
-path="res://.godot/imported/frog-idle.png-e19cd1f2912dbf2eaffa7382e18ba1b7.ctex"
+uid="uid://bds8os7wbblmd"
+path="res://.godot/imported/sapo-pulando.png-ae477a46f94849d0e63b959c5aeb5b83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/frog-idle.png"
-dest_files=["res://.godot/imported/frog-idle.png-e19cd1f2912dbf2eaffa7382e18ba1b7.ctex"]
+source_file="res://sprites/sapo-pulando.png"
+dest_files=["res://.godot/imported/sapo-pulando.png-ae477a46f94849d0e63b959c5aeb5b83.ctex"]
 
 [params]
 

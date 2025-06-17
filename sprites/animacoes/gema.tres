@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://d1mnd3i58wyo2"]
+
+[ext_resource type="Texture2D" uid="uid://c3qcxct5jpv0j" path="res://sprites/gema.png" id="1_easld"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ync2w"]
+atlas = ExtResource("1_easld")
+region = Rect2(0, 0, 15, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivugm"]
+atlas = ExtResource("1_easld")
+region = Rect2(15, 0, 15, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8jox"]
+atlas = ExtResource("1_easld")
+region = Rect2(30, 0, 15, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nviwq"]
+atlas = ExtResource("1_easld")
+region = Rect2(45, 0, 15, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6ki6"]
+atlas = ExtResource("1_easld")
+region = Rect2(60, 0, 15, 13)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ync2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivugm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8jox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nviwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6ki6")
+}],
+"loop": true,
+"name": &"gema",
+"speed": 5.0
+}]

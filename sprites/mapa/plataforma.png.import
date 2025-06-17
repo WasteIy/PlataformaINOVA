@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bouj2ycxuh7pa"
-path="res://.godot/imported/cherry.png-d17bb5f771b9bbf2b3df84123eed57ad.ctex"
+uid="uid://bwlmmsyxt0wq8"
+path="res://.godot/imported/plataforma.png-ddaedd66148140f6ec5dde68bb848dbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cherry.png"
-dest_files=["res://.godot/imported/cherry.png-d17bb5f771b9bbf2b3df84123eed57ad.ctex"]
+source_file="res://sprites/mapa/plataforma.png"
+dest_files=["res://.godot/imported/plataforma.png-ddaedd66148140f6ec5dde68bb848dbb.ctex"]
 
 [params]
 

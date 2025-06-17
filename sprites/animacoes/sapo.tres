@@ -1,0 +1,66 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://tt4mfesocd0q"]
+
+[ext_resource type="Texture2D" uid="uid://dnco75vyn7qu0" path="res://sprites/sapo-idle.png" id="1_ph7sn"]
+[ext_resource type="Texture2D" uid="uid://bds8os7wbblmd" path="res://sprites/sapo-pulando.png" id="2_pfiui"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sroru"]
+atlas = ExtResource("1_ph7sn")
+region = Rect2(0, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5p0c"]
+atlas = ExtResource("1_ph7sn")
+region = Rect2(35, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xguks"]
+atlas = ExtResource("1_ph7sn")
+region = Rect2(70, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iupd8"]
+atlas = ExtResource("1_ph7sn")
+region = Rect2(105, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36ubd"]
+atlas = ExtResource("2_pfiui")
+region = Rect2(0, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxj6a"]
+atlas = ExtResource("2_pfiui")
+region = Rect2(35, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkg2u"]
+atlas = ExtResource("2_pfiui")
+region = Rect2(70, 0, 35, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sroru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5p0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xguks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iupd8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36ubd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxj6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkg2u")
+}],
+"loop": true,
+"name": &"pulando",
+"speed": 5.0
+}]

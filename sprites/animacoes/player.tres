@@ -1,0 +1,87 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://soaicpllg20u"]
+
+[ext_resource type="Texture2D" uid="uid://c6rltxifdy7fe" path="res://sprites/jogador.png" id="1_xp3tc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j58pw"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(33, 96, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dgdg"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(0, 64, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m33p5"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(33, 64, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8p8q"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(0, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7b285"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(33, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihyu6"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(66, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x76wq"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(99, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju4ym"]
+atlas = ExtResource("1_xp3tc")
+region = Rect2(0, 96, 33, 32)
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"andando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j58pw")
+}],
+"loop": true,
+"name": &"caindo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dgdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m33p5")
+}],
+"loop": true,
+"name": &"dano",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8p8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7b285")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihyu6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x76wq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju4ym")
+}],
+"loop": true,
+"name": &"pulando",
+"speed": 5.0
+}]

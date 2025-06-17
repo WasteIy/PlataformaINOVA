@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq0aa48n7erjx"
-path="res://.godot/imported/enemy-deadth.png-d8149f871e5faf3c4febab05c4f2f74d.ctex"
+uid="uid://bouj2ycxuh7pa"
+path="res://.godot/imported/cereja.png-d5a564e41605ae2a569598e7db8e7fc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/enemy-deadth.png"
-dest_files=["res://.godot/imported/enemy-deadth.png-d8149f871e5faf3c4febab05c4f2f74d.ctex"]
+source_file="res://sprites/cereja.png"
+dest_files=["res://.godot/imported/cereja.png-d5a564e41605ae2a569598e7db8e7fc1.ctex"]
 
 [params]
 

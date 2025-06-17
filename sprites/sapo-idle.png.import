@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnjsw6rdtjtf3"
-path="res://.godot/imported/oposum.png-4c38fbf270022bece72737887d93d2a1.ctex"
+uid="uid://dnco75vyn7qu0"
+path="res://.godot/imported/sapo-idle.png-1fab0eb0f6b9fd6d1d243d497362073c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/oposum.png"
-dest_files=["res://.godot/imported/oposum.png-4c38fbf270022bece72737887d93d2a1.ctex"]
+source_file="res://sprites/sapo-idle.png"
+dest_files=["res://.godot/imported/sapo-idle.png-1fab0eb0f6b9fd6d1d243d497362073c.ctex"]
 
 [params]
 

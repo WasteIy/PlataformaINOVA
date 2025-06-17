@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bds8os7wbblmd"
-path="res://.godot/imported/frog-jump.png-bf331240daa4cf674cb7b45d0b063708.ctex"
+uid="uid://uuwjpn4h17wa"
+path="res://.godot/imported/meio.png-54aa21b06a3688a7a980c1c91f59d3b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/frog-jump.png"
-dest_files=["res://.godot/imported/frog-jump.png-bf331240daa4cf674cb7b45d0b063708.ctex"]
+source_file="res://sprites/mapa/meio.png"
+dest_files=["res://.godot/imported/meio.png-54aa21b06a3688a7a980c1c91f59d3b8.ctex"]
 
 [params]
 
