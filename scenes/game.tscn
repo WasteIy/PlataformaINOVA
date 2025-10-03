@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://bk5cmht7e56ao"]
+[gd_scene load_steps=30 format=4 uid="uid://bk5cmht7e56ao"]
 
 [ext_resource type="PackedScene" uid="uid://beleedw7rihlp" path="res://scenes/player.tscn" id="1_xe3kd"]
 [ext_resource type="Texture2D" uid="uid://bybe78tdc4s6h" path="res://sprites/map/tileset.png" id="2_i6gg3"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cdj2b3n3ag66a" path="res://scenes/frog.tscn" id="6_jtwdw"]
 [ext_resource type="Script" path="res://scripts/UIpontuacao.gd" id="7_jprts"]
 [ext_resource type="Texture2D" uid="uid://bouj2ycxuh7pa" path="res://sprites/cherry.png" id="7_u1015"]
+[ext_resource type="FontFile" uid="uid://dxdp8nsulomag" path="res://Daydream DEMO.otf" id="9_t88t3"]
+[ext_resource type="Texture2D" uid="uid://dmm7n0qmxou5b" path="res://sprites/item-feedback.png" id="10_0tqc2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w88d2"]
 texture = ExtResource("2_i6gg3")
@@ -446,12 +448,94 @@ sources/1 = SubResource("TileSetAtlasSource_jxaan")
 [sub_resource type="Theme" id="Theme_8sk53"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3c200"]
-bg_color = Color(0.38, 0.38, 0.38, 1)
+bg_color = Color(0.395213, 0.375357, 0.369577, 1)
+draw_center = false
 corner_radius_bottom_right = 35
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kfj1f"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbn6p"]
+atlas = ExtResource("10_0tqc2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrqir"]
+atlas = ExtResource("10_0tqc2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjsj0"]
+atlas = ExtResource("10_0tqc2")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvkf6"]
+atlas = ExtResource("10_0tqc2")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fj8gm"]
 atlas = ExtResource("7_u1015")
-region = Rect2(41.5189, 0, 21.0435, 21)
+region = Rect2(0, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16tbm"]
+atlas = ExtResource("7_u1015")
+region = Rect2(21, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1j3sg"]
+atlas = ExtResource("7_u1015")
+region = Rect2(42, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp8ue"]
+atlas = ExtResource("7_u1015")
+region = Rect2(63, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntwfh"]
+atlas = ExtResource("7_u1015")
+region = Rect2(84, 0, 21, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_in5rw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbn6p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrqir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjsj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvkf6")
+}],
+"loop": false,
+"name": &"feedback",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fj8gm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16tbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1j3sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp8ue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntwfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp8ue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1j3sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16tbm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
 
 [node name="Game" type="Node2D"]
 
@@ -533,23 +617,22 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_3c200")
 
 [node name="Label" type="Label" parent="UI/ColorRect"]
 layout_mode = 0
-offset_right = 156.0
-offset_bottom = 130.0
-theme_override_font_sizes/font_size = 76
+offset_left = 83.0
+offset_top = 5.0
+offset_right = 239.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(0.929908, 0.923316, 0.927092, 1)
+theme_override_colors/font_outline_color = Color(0.196078, 0.172549, 0.262745, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("9_t88t3")
+theme_override_font_sizes/font_size = 40
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="UI/ColorRect"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -132.0
-offset_top = -67.5
-offset_bottom = 64.5
-grow_horizontal = 0
-grow_vertical = 2
-texture = SubResource("AtlasTexture_kfj1f")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI/ColorRect"]
+position = Vector2(86, 69)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_in5rw")
+animation = &"idle"
+autoplay = "idle"
