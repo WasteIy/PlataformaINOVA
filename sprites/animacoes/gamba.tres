@@ -1,6 +1,31 @@
-[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://bw1hqe08cuud7"]
+[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://bw1hqe08cuud7"]
 
+[ext_resource type="Texture2D" uid="uid://dq0aa48n7erjx" path="res://sprites/inimigo-morte.png" id="1_81gtx"]
 [ext_resource type="Texture2D" uid="uid://bnjsw6rdtjtf3" path="res://sprites/gamba.png" id="1_n0oc1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0ual"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(0, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsvvb"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(40, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mw7nl"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(80, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1ixs"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(120, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dwgw"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(160, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7ynd"]
+atlas = ExtResource("1_81gtx")
+region = Rect2(200, 0, 40, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5u2gk"]
 atlas = ExtResource("1_n0oc1")
@@ -28,6 +53,29 @@ region = Rect2(180, 0, 36, 28)
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0ual")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsvvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mw7nl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1ixs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dwgw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7ynd")
+}],
+"loop": false,
+"name": &"feedback",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5u2gk")
